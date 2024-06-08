@@ -1,9 +1,24 @@
 import { Tokens } from "marked"
 import { FlexConverter, KnownFlexComponent } from "../../types"
 
+function getInnerText(token: Tokens.Generic): string {
+  return token.tokens
+    ? token.tokens
+      .map((t: any) => {
+        if (t.tokens != null) {
+          return getInnerText(t)
+        }
+        return t.text ?? ""
+      })
+      .join("")
+    : token.text
+}
+
 export class HeadingConverter implements FlexConverter {
-  async convert(token: Tokens.Heading | Tokens.Generic): Promise<KnownFlexComponent[]> {
-    const text = token.text
+  async convert(
+    token: Tokens.Heading | Tokens.Generic
+  ): Promise<KnownFlexComponent[]> {
+    const text = getInnerText(token)
     let size = "md"
     let paddingBottom = "sm"
     if (token.depth === 1) {
