@@ -24,7 +24,8 @@ export class HeadingConverter implements FlexConverter {
     if (token.depth === 1) {
       size = "xl"
       paddingBottom = "lg"
-    } else if (token.depth === 2) {
+    }
+    else if (token.depth === 2) {
       size = "lg"
       paddingBottom = "md"
     }
