@@ -227,3 +227,19 @@ describe('convertToFlexBox', () => {
     }
   })
 })
+
+describe('MarkdownFlexMessage#convert', () => {
+  it('markdown_decode', async () => {
+    const markdown = await fsPromises.readFile(join(dir, '17markdown_decode.md'), 'utf-8')
+    const json = await fsPromises.readFile(join(dir, '17markdown_decode.json'), 'utf-8')
+    const { flexBox, textType } = await convertToFlexBox(markdown)
+    console.log(JSON.stringify(flexBox, null, 2))
+    console.log(textType)
+    if (process.env.DEBUG) {
+      console.log(JSON.stringify(flexBox, null, 2))
+    } else {
+      expect(textType).toEqual('markdown')
+      expect(flexBox).toEqual(JSON.parse(json))
+    }
+  })
+})

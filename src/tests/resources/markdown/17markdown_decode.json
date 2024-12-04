@@ -1,0 +1,227 @@
+{
+  "type": "box",
+  "layout": "vertical",
+  "spacing": "md",
+  "contents": [
+    {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Testing \"Quoted Heading\" & Symbols",
+          "weight": "bold",
+          "wrap": true,
+          "size": "xl"
+        }
+      ],
+      "paddingBottom": "lg"
+    },
+    {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Heading with 'Single Quotes' Test",
+          "weight": "bold",
+          "wrap": true,
+          "size": "lg"
+        }
+      ],
+      "paddingBottom": "md"
+    },
+    {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Nested \"Quote 'Structure' Testing\" & More",
+          "weight": "bold",
+          "wrap": true,
+          "size": "md"
+        }
+      ],
+      "paddingBottom": "sm"
+    },
+    {
+      "type": "box",
+      "layout": "horizontal",
+      "margin": "md",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "width": "4px",
+          "height": "4px",
+          "backgroundColor": "#666979",
+          "cornerRadius": "2px",
+          "offsetTop": "12px",
+          "offsetStart": "4px",
+          "contents": []
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "paddingStart": "12px",
+          "contents": [
+            {
+              "type": "text",
+              "wrap": true,
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "List item with \"quotes\" & symbols"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "width": "4px",
+          "height": "4px",
+          "backgroundColor": "#666979",
+          "cornerRadius": "2px",
+          "offsetTop": "12px",
+          "offsetStart": "4px",
+          "contents": []
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "paddingStart": "12px",
+          "contents": [
+            {
+              "type": "text",
+              "wrap": true,
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "Item with 'single quotes' & marks"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "width": "4px",
+          "height": "4px",
+          "backgroundColor": "#666979",
+          "cornerRadius": "2px",
+          "offsetTop": "12px",
+          "offsetStart": "4px",
+          "contents": []
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "paddingStart": "12px",
+          "contents": [
+            {
+              "type": "text",
+              "wrap": true,
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "Mixed \"outer 'inner' quotes\" test"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "width": "4px",
+          "height": "4px",
+          "backgroundColor": "#666979",
+          "cornerRadius": "2px",
+          "offsetTop": "12px",
+          "offsetStart": "4px",
+          "contents": []
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "paddingStart": "12px",
+          "contents": [
+            {
+              "type": "text",
+              "wrap": true,
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "With "
+                },
+                {
+                  "type": "span",
+                  "text": "`inline \"quoted\" & 'marked' code`",
+                  "weight": "bold",
+                  "size": "sm"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "wrap": true,
+      "contents": [
+        {
+          "type": "span",
+          "text": "Testing "
+        },
+        {
+          "type": "span",
+          "text": "italic \"quotes\" & symbols",
+          "style": "italic"
+        },
+        {
+          "type": "span",
+          "text": " and "
+        },
+        {
+          "type": "span",
+          "text": "bold 'quotes' & marks",
+          "weight": "bold"
+        },
+        {
+          "type": "span",
+          "text": "\nFinal test of "
+        },
+        {
+          "type": "span",
+          "text": "`code with \"double\" & 'single' quotes & symbols`",
+          "weight": "bold",
+          "size": "sm"
+        }
+      ]
+    }
+  ],
+  "paddingAll": "none"
+}
