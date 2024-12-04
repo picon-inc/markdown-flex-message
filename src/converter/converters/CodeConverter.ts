@@ -2,6 +2,7 @@ import { Tokens } from "marked"
 import { FlexSpan, FlexText } from "@line/bot-sdk"
 import { CodeHighlightTheme, FlexConverter, KnownFlexComponent } from "../../types"
 import { CodeParser } from "../../code/CodeParser"
+import { decodeText } from "../../lib/decodeText"
 
 export class CodeConverter implements FlexConverter {
   private readonly parser: CodeParser
@@ -93,7 +94,7 @@ export class CodeConverter implements FlexConverter {
       contents: [
         {
           type: "text",
-          text,
+          text: decodeText(text),
           color: this.theme.titleTextColor,
           size: "xs"
         }
