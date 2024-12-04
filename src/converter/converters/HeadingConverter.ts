@@ -37,6 +37,7 @@ export class HeadingConverter implements FlexConverter {
           type: "text",
           text,
           weight: "bold",
+          wrap: true,
           size
         }
       ],
