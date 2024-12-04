@@ -1,6 +1,7 @@
 import { Token } from "marked"
 import { MainConverter } from "../MainConverter"
 import { KnownFlexComponent } from "../../types"
+import { decodeText } from "../../lib/decodeText"
 
 export class InlineConverter {
   async convert(tokens: Token[]): Promise<KnownFlexComponent[]> {
@@ -31,6 +32,7 @@ export class InlineConverter {
             if (block.contents.length === 0) {
               component.text = (component.text || '').replace(/^\n/, "")
             }
+            component.text = decodeText(component.text || "")
             block.contents.push(component)
           } else {
             components.push(component)

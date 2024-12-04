@@ -1,5 +1,6 @@
 import { Tokens } from "marked"
 import { FlexConverter, KnownFlexComponent } from "../../types"
+import { decodeText } from "../../lib/decodeText"
 
 function getInnerText(token: Tokens.Generic): string {
   return token.tokens
@@ -35,7 +36,7 @@ export class HeadingConverter implements FlexConverter {
       contents: [
         {
           type: "text",
-          text,
+          text: decodeText(text),
           weight: "bold",
           wrap: true,
           size
