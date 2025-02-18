@@ -1,0 +1,29 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Test",
+        "weight": "bold",
+        "size": "xl"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "text",
+        "text": "Text",
+        "wrap": true
+      }
+    ],
+    "spacing": "md"
+  }
+}
