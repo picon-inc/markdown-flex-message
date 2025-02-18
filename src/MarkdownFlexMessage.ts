@@ -77,13 +77,19 @@ export class MarkdownFlexMessage {
     const flexBox: messagingApi.FlexBox = {
       type: "box",
       layout: "vertical",
-      spacing: "md",
+      spacing: "sm",
+      margin: "sm",
       contents: []
     }
     const { tokensList, textType } = this.parser.parse(markdown)
     for (const token of tokensList) {
       const contents = await this.converter.convert(token)
       for (const content of contents) {
+        // Process text components to ensure proper spacing
+        if (content.type === "text") {
+          content.margin = "sm"
+          content.wrap = true
+        }
         const simplifiedContent = JSON.parse(JSON.stringify(content))
         flexBox.contents.push(simplifiedContent)
       }
