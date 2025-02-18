@@ -38,7 +38,8 @@ export class ConverterFactory {
     } else if (token.type === 'table') {
       return new TableConverter()
     } else if (token.type === 'text') {
-      return new TextConverter()
+      const textConverter = new TextConverter()
+      return new TextWrapConverter(textConverter)
     } else if (token.type === 'strong') {
       return new StrongConverter()
     } else if (token.type === 'em') {
