@@ -6,13 +6,9 @@
     "contents": [
       {
         "type": "text",
-        "text": "Test",
-        "weight": "bold",
-        "size": "xl"
-      },
-      {
-        "type": "separator",
-        "margin": "md"
+        "text": "以下は、ジャンル別におすすめ映画を紹介する形式の例です。",
+        "margin": "sm",
+        "wrap": true
       },
       {
         "type": "separator",
@@ -20,10 +16,105 @@
       },
       {
         "type": "text",
-        "text": "Text",
+        "text": "感動・ドラマ",
+        "size": "lg",
+        "weight": "bold",
+        "margin": "sm",
         "wrap": true
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "contents": [
+              {
+                "type": "span",
+                "text": "君の名は。",
+                "weight": "bold"
+              }
+            ],
+            "wrap": true,
+            "margin": "sm"
+          },
+          {
+            "type": "text",
+            "text": "美しい映像と切ない物語で、多くの人の心を打つ作品です。",
+            "wrap": true,
+            "margin": "sm"
+          }
+        ],
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "contents": [
+              {
+                "type": "span",
+                "text": "万引き家族",
+                "weight": "bold"
+              }
+            ],
+            "wrap": true,
+            "margin": "sm"
+          },
+          {
+            "type": "text",
+            "text": "社会問題や家族の絆を独特な視点で描いた、重厚なドラマです。",
+            "wrap": true,
+            "margin": "sm"
+          }
+        ],
+        "margin": "sm"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "text",
+        "text": "アクション・サスペンス",
+        "size": "lg",
+        "weight": "bold",
+        "margin": "sm",
+        "wrap": true
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "contents": [
+              {
+                "type": "span",
+                "text": "ジョン・ウィック シリーズ",
+                "weight": "bold"
+              }
+            ],
+            "wrap": true,
+            "margin": "sm"
+          },
+          {
+            "type": "text",
+            "text": "スタイリッシュなアクションとスリリングな展開が魅力のシリーズ作品です。",
+            "wrap": true,
+            "margin": "sm"
+          }
+        ],
+        "margin": "sm"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
       }
     ],
-    "spacing": "md"
+    "spacing": "sm",
+    "margin": "sm"
   }
 }
