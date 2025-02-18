@@ -15,7 +15,8 @@
             "type": "text",
             "text": "Hello",
             "weight": "bold",
-            "size": "xl"
+            "size": "xl",
+            "wrap": true
           }
         ],
         "paddingBottom": "lg"

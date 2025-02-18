@@ -38,8 +38,8 @@ export class HeadingConverter implements FlexConverter {
           type: "text",
           text: decodeText(text),
           weight: "bold",
-          wrap: true,
-          size
+          size,
+          wrap: true
         }
       ],
       paddingBottom

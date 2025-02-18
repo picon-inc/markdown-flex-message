@@ -7,6 +7,7 @@ import { ParagraphConverter } from "./converters/PragraphConverter"
 import { ImageConverter } from "./converters/ImageConverter"
 import { StrongConverter } from "./converters/StrongConverter"
 import { TextConverter } from "./converters/TextConverter"
+
 import { EmConverter } from "./converters/EmConverter"
 import { LinkConverter } from "./converters/LinkConverter"
 import { DelConverter } from "./converters/DelConverter"
@@ -38,8 +39,7 @@ export class ConverterFactory {
     } else if (token.type === 'table') {
       return new TableConverter()
     } else if (token.type === 'text') {
-      const textConverter = new TextConverter()
-      return new TextWrapConverter(textConverter)
+      return new TextConverter()
     } else if (token.type === 'strong') {
       return new StrongConverter()
     } else if (token.type === 'em') {

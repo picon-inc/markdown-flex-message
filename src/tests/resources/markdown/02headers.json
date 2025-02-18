@@ -20,7 +20,8 @@
             "type": "text",
             "text": "Sample",
             "weight": "bold",
-            "size": "xl"
+            "size": "xl",
+            "wrap": true
           }
         ],
         "paddingBottom": "lg"
@@ -33,7 +34,8 @@
             "type": "text",
             "text": "Sample",
             "weight": "bold",
-            "size": "lg"
+            "size": "lg",
+            "wrap": true
           }
         ],
         "paddingBottom": "md"
