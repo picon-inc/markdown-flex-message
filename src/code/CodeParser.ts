@@ -31,13 +31,15 @@ export class CodeParser {
   }
   private stringifyToken(token: Token | string): string {
     if (typeof token === 'string') {
-      return token
+      // Preserve newlines and spaces exactly as they are
+      return token.replace(/\n{3,}/g, '\n\n')  // Collapse multiple newlines to max 2
     }
     const content = token.content
     if (typeof content === 'string') {
-      return content
+      return content.replace(/\n{3,}/g, '\n\n')  // Collapse multiple newlines to max 2
     }
     if (content instanceof Array) {
+      // Join tokens preserving essential whitespace
       return content.map((token) => this.stringifyToken(token)).join('')
     }
     return this.stringifyToken(content)

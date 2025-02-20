@@ -70,6 +70,7 @@ export class CodeConverter implements FlexConverter {
     return components
   }
   private simpleCodeTextComponent(text: string): FlexText {
+    // Preserve newlines by using a single text component
     return {
       type: "text",
       text,
