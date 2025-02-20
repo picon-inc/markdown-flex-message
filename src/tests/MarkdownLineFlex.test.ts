@@ -213,6 +213,16 @@ describe('convertToFlexBubble', () => {
   })
 })
 
+describe('whitespace handling', () => {
+  it('handles empty spaces with newlines', async () => {
+    const markdown = await fsPromises.readFile(join(dir, 'whitespace.md'), 'utf-8')
+    const json = await fsPromises.readFile(join(dir, 'whitespace.json'), 'utf-8')
+    const { flexMessage } = await convertToFlexMessage(markdown)
+    expect(JSON.parse(JSON.stringify(flexMessage))).toEqual(JSON.parse(json))
+  })
+})
+
+
 describe('convertToFlexBox', () => {
   it('code_only', async () => {
     const markdown = await fsPromises.readFile(join(dir, '14code_only.md'), 'utf-8')
