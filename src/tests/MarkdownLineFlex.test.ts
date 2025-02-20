@@ -220,6 +220,13 @@ describe('whitespace handling', () => {
     const { flexMessage } = await convertToFlexMessage(markdown)
     expect(JSON.parse(JSON.stringify(flexMessage))).toEqual(JSON.parse(json))
   })
+
+  it('handles empty lines in code blocks', async () => {
+    const markdown = await fsPromises.readFile(join(dir, 'code_whitespace.md'), 'utf-8')
+    const json = await fsPromises.readFile(join(dir, 'code_whitespace.json'), 'utf-8')
+    const { flexMessage } = await convertToFlexMessage(markdown)
+    expect(JSON.parse(JSON.stringify(flexMessage))).toEqual(JSON.parse(json))
+  })
 })
 
 

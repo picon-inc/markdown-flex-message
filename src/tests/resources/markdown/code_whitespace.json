@@ -1,0 +1,55 @@
+{
+  "type": "bubble",
+  "size": "giga",
+  "styles": {
+    "body": {
+      "separator": true
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "paddingAll": "xl",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#272822",
+        "cornerRadius": "6px",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "java",
+                "color": "#d9d9d8",
+                "size": "xs"
+              }
+            ],
+            "backgroundColor": "#343548",
+            "paddingTop": "3px",
+            "paddingBottom": "3px",
+            "paddingStart": "6px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "paddingAll": "6px",
+            "contents": [
+              {
+                "type": "text",
+                "size": "xs",
+                "wrap": true,
+                "color": "#f8f8f2",
+                "text": "public class Test {\n\n    public void test() {\n\n        System.out.println(\"test\");\n\n    }\n}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
